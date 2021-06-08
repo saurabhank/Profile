@@ -6,9 +6,9 @@ const router=express.Router();
 
 require('../db/conn')
 const User=require('../model/userSchema')
-router.get('/', (req, res) => {
-    res.send(`Hello world from the routerapp.js`);
-});
+// router.get('/', (req, res) => {
+//     res.send(`Hello world from the routerapp.js`);
+// });
 
 router.post("/register", async (req, res) => {
     const {name,email,phone,work,password,cpassword}=req.body;
