@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  background: lightgrey
+}
+
+.main {
+  background-color: #fff
+}
+
+.mycol {
+  padding-left: 0;
+  padding-right: 0
+}
+
+.xcol {
+  padding-left: 50px;
+  padding-right: 50px
+}
+
+.title {
+  font-weight: bold;
+  color: #583131
+}
+
+.btn {
+  background-color: #6200EA;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 0
+}
+
+.btn span {
+  font-size: 15px;
+  font-weight: bold
+}
+
+a {
+  text-decoration:none;
+  color: #bb4224 !important
+}
+
+.form-control {
+  border: none;
+  box-shadow: 0px 0.1px 0px 0px #dae0e5;
+  border-radius: 0
+}
+
+.jk,
+.lm {
+  box-shadow: 0px 0.5px 0px 0px #dae0e5 !important
+}
+
+.form-contro input [type="text"],
+.form-control input [type="email"],
+.form-control input [type="password"] {
+  color: black
+}
+
+.form-control:focus {
+  outline: 0;
+  box-shadow: 0px 0.5px 0px 0px #dae0e5 !important
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 0;
+  padding: 7px 0 0 0;
+  transition: all 300ms;
+  opacity: 0.5
+}
+
+.form-control:focus+.form-control-placeholder,
+.form-control:valid+.form-control-placeholder {
+  font-size: 80% !important;
+  transform: translate3d(0, -100%, 0) !important;
+  opacity: 1 !important
+}
+.carousel-item {
+  height: 92vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.error-404 {
+  margin: 0 auto;
+  text-align: center;
+}
+.error-404 .error-code {
+  bottom: 60%;
+  color: #4686CC;
+  font-size: 96px;
+  line-height: 100px;
+  font-weight: bold;
+}
+.error-404 .error-desc {
+  font-size: 12px;
+  color: #647788;
+}
+.error-404 .m-b-10 {
+  margin-bottom: 10px!important;
+}
+.error-404 .m-b-20 {
+  margin-bottom: 20px!important;
+}
+.error-404 .m-t-20 {
+  margin-top: 20px!important;
+}
