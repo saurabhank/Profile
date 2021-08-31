@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('Static Analysis') {
             steps {
-                echo $PWD
+
+                sh 'echo `pwd`'
             }
         }
         stage('Compile') {
