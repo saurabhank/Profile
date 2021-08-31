@@ -17,7 +17,7 @@ const middleware = (req,res, next) => {
     next();
 }
 
-const User=require('./model/userSchema')
+const User=require('./model/userSchema');//User Schema;
 
 //app.get('/', (req, res) => {
 //    res.send(`Hello world from the server app.js`);
