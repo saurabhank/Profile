@@ -19,6 +19,10 @@ const middleware = (req,res, next) => {
 
 const User=require('./model/userSchema');//User Schema;
 
+app.get('/', function (req, res) {
+    res.send('hello world');
+   });
+
 //app.get('/', (req, res) => {
 //    res.send(`Hello world from the server app.js`);
 //});
@@ -53,3 +57,5 @@ if(process.env.NODE_ENV==="production")
 app.listen(PORT, () => {
     console.log(`server is running at port no ${PORT}`);
 })
+
+module.exports = app;
