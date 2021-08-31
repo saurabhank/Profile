@@ -9,35 +9,17 @@ pipeline {
                 sh 'npm config ls'
             }
         }
-        stage('Static Analysis') {
+        stage('Install dependencies') {
             steps {
-                sh 'echo `pwd`'
+                sh 'npm install'
             }
         }
-        stage('Compile') {
+            
+            stage('Test') {
             steps {
-                echo 'Compile the source code' 
+                sh 'npm test'
             }
-        }
-        stage('Security Check') {
-            steps {
-                echo 'Run the security checks against the application' 
-            }
-        }
-        stage('Run Unit Tests') {
-            steps {
-                echo 'Run unit tests from the source code' 
-            }
-        }
-        stage('Run Integration Tests') {
-            steps {
-                echo 'Run only crucial integration tests from the source code' 
-            }
-        }
-        stage('Publish Artifacts') {
-            steps {
-                echo 'Save the assemblies generated from the compilation' 
-            }
-        }
+        }      
+        
     }
 }
