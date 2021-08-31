@@ -1,9 +1,16 @@
 pipeline {
     agent any 
+    tools {nodejs "node"}
+
     stages {
-        stage('Static Analysis') {
+        stage('Example') {
             steps {
 
+                sh 'npm config ls'
+            }
+        }
+        stage('Static Analysis') {
+            steps {
                 sh 'echo `pwd`'
             }
         }
