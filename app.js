@@ -13,7 +13,7 @@ app.use(require('./router/auth'))
 const PORT=process.env.PORT||5000
 //middleware
 const middleware = (req,res, next) => {
-    console.log(`Hello my Middleware--Jenkins Push test `);
+    console.log(`Hello my Middleware--Jenkins Push test for build`);
     next();
 }
 
