@@ -11,7 +11,7 @@ pipeline {
         }    
         stage('start server'){
             steps {
-                sh 'pm2 start server.js --watch'
+                sh 'pm2 start app.js --watch'
             }
         } 
     }
