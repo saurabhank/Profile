@@ -22,7 +22,6 @@ const User=require('./model/userSchema');//User Schema;
 app.get('/', function (req, res) {
     res.send('hello world');
    });
-
 //app.get('/', (req, res) => {
 //    res.send(`Hello world from the server app.js`);
 //});
