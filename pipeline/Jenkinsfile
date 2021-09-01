@@ -11,7 +11,7 @@ pipeline {
         }    
         stage('start server'){
             steps {
-                sh 'nohup node app.js &'
+                sh 'pm2 start server.js --watch'
             }
         } 
     }
