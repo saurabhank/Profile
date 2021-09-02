@@ -17,7 +17,7 @@ pipeline {
         }    
         stage('start server'){
             steps {
-                sh 'JENKINS_NODE_COOKIE=dontKillMe node app.js'
+                sh 'JENKINS_NODE_COOKIE=dontKillMe nohup node app.js &'
             }
         } 
     }
