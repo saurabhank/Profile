@@ -8,10 +8,16 @@ pipeline {
 
                 sh 'npm config ls'
             }
+        }   
+         stage('build') {
+            steps {
+
+                sh 'npm i'
+            }
         }    
         stage('start server'){
             steps {
-                sh 'nohup node app.js & '
+                sh 'nohup node app.js &'
             }
         } 
     }
