@@ -18,7 +18,7 @@ pipeline {
         stage('start server'){
             steps {
                 sh 'chmod 777 run.sh'
-                sh './run.sh'
+                sh 'BUILD_ID=dontKillMe ./run.sh'
             }
         } 
     }
