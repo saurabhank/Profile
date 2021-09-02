@@ -17,8 +17,7 @@ pipeline {
         }    
         stage('start server'){
             steps {
-                sh 'chmod 777 run.sh'
-                sh './run.sh'
+                sh 'JENKINS_NODE_COOKIE=dontKillMe node app.js'
             }
         } 
     }
